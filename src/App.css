@@ -10,7 +10,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -82,9 +82,11 @@ table {
   padding: .5rem;
   width:90%;
   border-radius: 10px;
+  box-shadow: 1px 2px 5px #383838b2;
 }
 .poster{
   height: 30vh;
+  box-shadow: 1px 2px 5px #383838b2;
 }
 .information{
   font-size: 30rem;
@@ -113,7 +115,30 @@ img{
 .lists{
   background-color: #3f3697;
 }
-
+.sectionname{
+  color:white;
+  font-size:2rem;
+  background-color: #3d84b8;
+  width:75%;
+  margin:auto;
+  border-radius: 0px 0px 5px 5px;
+}
+input{
+  height:1.5rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+button{
+  height: 1.5rem;
+  border-radius: 5px;
+  color:white;
+  background-color: #3d84b8;
+  padding-left:.5rem;
+  padding-right:.5rem;
+  border:none;
+  box-shadow: 1px 2px 5px #383838b2;
+  margin-top: 1rem;
+}
 
 @media screen and (max-width: 950px) {
   .card{

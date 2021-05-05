@@ -6,6 +6,7 @@ const Cardsection = (props) =>{
     if(props.movielist){
         return (
             <div className = 'cardsection'>
+                <h2 className = 'sectionname'>Results</h2>
                 {props.movielist.map(movie => (
                     <div className = 'card'>
                         <img src = {movie.Poster} className = 'poster' alt = 'movie poster'></img>
@@ -21,7 +22,8 @@ const Cardsection = (props) =>{
     }else{
         return(
             <div className = 'cardsection'>
-            <p className = 'loading'>Loading</p>
+                <h2 className = 'sectionname'>Results</h2>
+                <p className = 'loading'>Loading</p>
             </div>
         )
     }

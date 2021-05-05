@@ -8,6 +8,7 @@ const Nomineelist = (props) =>{
         console.log(props.nomineelist)
         return (
             <div className = 'nomineelist'>
+                <h2 className = 'sectionname'>Nominees</h2>
                 {props.nomineelist.map(movie => (
                     <div className = 'card'>
                         <img src = {movie.Poster} className = 'poster' alt = 'movie poster'></img>
@@ -23,7 +24,8 @@ const Nomineelist = (props) =>{
     }else{
         return(
             <div className = 'nomineelist'>
-            <p className = 'loading'>Loading</p>
+                <h2 className = 'sectionname'>Nominees</h2>
+                <p className = 'loading'>Loading</p>
             </div>
         )
     }
