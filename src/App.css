@@ -1,0 +1,127 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.App {
+  text-align: center;
+  padding-top: 4rem;
+  background-color: #3f3697;
+  padding-bottom: 1rem; 
+}
+
+.lists{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* This section is for the styling of the movie search results and nominee list*/
+.cardsection{
+  width: 35vw;
+  border: 1px solid black;
+  min-height: 75vh;
+  margin-top: 2rem;
+  border-radius: 10px;
+  background-color: #344fa1;
+  
+}
+
+.nomineelist{
+  width: 35vw;
+  border: 1px solid black;
+  min-height: 75vh;
+  margin-top: 2rem;
+  border-radius: 10px;
+  background-color: #344fa1;
+}
+/* This section styles the cards for the movies*/
+.card{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: #f0ebcc;
+  padding: .5rem;
+  width:90%;
+  border-radius: 10px;
+}
+.poster{
+  height: 30vh;
+}
+.information{
+  font-size: 30rem;
+}
+.title{
+  font-size:2rem;
+  width: 10rem;
+  margin-top: 3rem;
+}
+img{
+  border-radius: 10px;
+}
+
+/*This code puts the banner in place*/
+.banner{
+  position: fixed;
+  background-color:#3d84b8;
+  width: 100vw;
+  top:-1px;
+  left: -1rem;
+  border-bottom: 2px solid black;
+  padding-top:1rem;
+  height: 3rem;
+  font-size: 2rem;
+}
+.lists{
+  background-color: #3f3697;
+}
+
+
+@media screen and (max-width: 950px) {
+  .card{
+    display: inline-block;
+    text-align: center;
+  }
+  .title{
+    margin:auto;
+  }
+
+}
