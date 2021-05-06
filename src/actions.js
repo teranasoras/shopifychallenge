@@ -9,7 +9,7 @@ export const REMOVE_MOVIE = "REMOVE_MOVIE"
 
 export const movieset = (Search) => (dispatch) => {
     dispatch({type: SET_MOVIE_LIST_START});
-    axios.get(`http://www.omdbapi.com/?s=${Search}&apikey=3f479f54&type=movie`)
+    axios.get(`https://www.omdbapi.com/?s=${Search}&apikey=3f479f54&type=movie`)
         .then(res=>{
             dispatch({type: SET_MOVIE_LIST_SUCCESS, payload: res.data.Search})
         })
