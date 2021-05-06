@@ -139,6 +139,9 @@ button{
   box-shadow: 1px 2px 5px #383838b2;
   margin-top: 1rem;
 }
+button:disabled{
+  background-color: #7ea0b9;
+}
 
 @media screen and (max-width: 950px) {
   .card{
